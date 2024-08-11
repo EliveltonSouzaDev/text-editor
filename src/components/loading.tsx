@@ -6,6 +6,7 @@ const loadingContainerVariants = {
       staggerChildren: 0.2,
     },
   },
+
   end: {
     transition: {
       staggerChildren: 0.2,
@@ -35,17 +36,17 @@ const loadingContainer: MotionStyle = {
   justifyContent: 'center'
 }
 
-const loadingCircle:MotionStyle = {
+const loadingCircle: MotionStyle = {
   backgroundColor: '#AEC0FF',
   width: '24px',
   height: '24px',
   borderRadius: '24px',
-  display:'inline-block',
+  display: 'inline-block',
   margin: '0 8px'
 }
 
-export function Loading(){
-  return(
+export function Loading() {
+  return (
     <div data-testid="loading">
       <motion.div
         style={loadingContainer}
